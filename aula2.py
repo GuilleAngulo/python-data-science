@@ -316,6 +316,7 @@ Analisar e interpretar a correlação de outras variáveis além das feitas em s
 
 avaliacoes_por_ano = imdb_usa.groupby("title_year").sum()["num_voted_users"]
 avaliacoes_por_ano.plot()
+imdb_usa[["gross", "budget", "lucro", "title_year", "num_voted_users"]].corr()
 
 """#Não esqueça de compartilhar a solução dos seus desafios com nossos instrutores, seja no Twitter, seja LinkedIn. Boa sorte!"""
 
